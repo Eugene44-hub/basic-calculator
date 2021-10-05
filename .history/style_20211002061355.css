@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 700px;
+    background-color: hsl(222, 26%, 31%);
+    text-transform: uppercase;
+}
+
+.theme {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    flex: 60%;
+    text-transform: lowercase;
+    color: white;
+}
+
+.theme-number {
+    flex: 40%;
+    color: white;
+}
+
+P {
+    align-self: flex-end;
+}
+
+.switch {
+    word-spacing: 20px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    padding: 10px;
+    background-color: hsl(223, 31%, 20%);
+    position: relative;
+    border-radius: 10px;
+}
+
+.circle {
+    position: absolute;
+    background-color: hsl(6, 63%, 50%);
+    padding: 7px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    align-self: flex-end;
+}
+
+.cal-container {
+    margin: auto;
+    width: 400px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#reset-button,
+#del-button {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+}
+
+.button-container {
+    background-color: hsl(223, 31%, 20%);
+}
+
+button {
+    flex-basis: 20%;
+    padding: 12px;
+    margin: 9px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 9px;
+    border: none;
+}
+
+#reset-button,
+#equals-button {
+    flex-basis: 45%;
+}
+
+.output {
+    height: 100px;
+    background-color: hsl(224, 36%, 15%);
+    margin: 15px 0
+}
+
+#equals-button {
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+}
+
+
+/* Dark red (key shadow): hsl(6, 70%, 34%) */

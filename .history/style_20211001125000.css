@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 400px;
+}
+
+.theme {
+    display: flex;
+}
+
+.toggle {
+    background-color: black;
+}
+
+.header {
+    flex: 1;
+}
+
+.cal-container {
+    width: 50%;
+    margin: auto;
+}

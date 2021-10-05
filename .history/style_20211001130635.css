@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 500px;
+}
+
+.theme {
+    display: flex;
+}
+
+.toggle {
+    background-color: black;
+    height: 20px;
+}
+
+.header {
+    flex: 1;
+}
+
+.theme-number {}
+
+.cal-container {
+    margin: auto;
+    width: 40%;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px;
+}

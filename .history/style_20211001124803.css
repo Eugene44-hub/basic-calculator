@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.theme {
+    display: flex;
+}
+
+.toggle {
+    height: 100px;
+    background-color: black;
+}
+
+.header {
+    flex: 1;
+}
+
+.cal-container {
+    width: 5-%;
+}

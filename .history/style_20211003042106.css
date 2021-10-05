@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+body {
+    display: flex;
+    height: 700px;
+    background-color: hsl(222, 26%, 31%);
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.theme {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    flex: 60%;
+    text-transform: lowercase;
+}
+
+.theme-number {
+    flex: 40%;
+}
+
+P {
+    align-self: flex-end;
+}
+
+.switch {
+    word-spacing: 20px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    padding: 10px;
+    background-color: hsl(223, 31%, 20%);
+    position: relative;
+    border-radius: 10px;
+}
+
+.circle {
+    position: absolute;
+    background-color: hsl(6, 63%, 50%);
+    padding: 7px;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transition: all 1s;
+}
+
+h2 {
+    align-self: flex-end;
+}
+
+.cal-container {
+    margin: auto;
+    width: 500px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#reset-button,
+#del-button {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0 4px hsl(224, 28%, 35%);
+}
+
+#reset-button:active,
+#del-button:active,
+#equals-button:active {
+    box-shadow: none;
+}
+
+.button-container {
+    background-color: hsl(223, 31%, 20%);
+}
+
+button {
+    flex-basis: 20%;
+    padding: 12px;
+    margin: 9px;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 0 4px rgb(177, 176, 176);
+    font-weight: bold;
+}
+
+#reset-button,
+#equals-button {
+    flex-basis: 45%;
+}
+
+.output {
+    height: 100px;
+    background-color: hsl(224, 36%, 15%);
+    margin: 15px 0
+}
+
+#equals-button {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 4px hsl(6, 70%, 34%);
+    color: white;
+}
+
+span,
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+
+/* Dark red (key shadow): hsl(6, 70%, 34%) */
