@@ -81,8 +81,8 @@ class Calculator {
         //themes End
 
     appendNumber(input) {
-
         this.currentOperand;
+
         if (this.currentOperand.includes('.') && input === '.') return
         this.currentOperand = this.currentOperand + input;
 
@@ -91,7 +91,6 @@ class Calculator {
 
     updateDisplay() {
         this.input = document.querySelector('.result')
-
         this.input.textContent = this.currentOperand;
         if (this.operation !== undefined) {
 
@@ -170,6 +169,7 @@ function eventListeners() {
         if (e.target.id === 'number-button') {
 
             calculator.appendNumber(e.target.textContent);
+            if (this.input.textContent === '∞') return
 
         }
         if (e.target.classList.contains('operation')) {
@@ -218,5 +218,4 @@ eventListeners()
 // }
 
 // const test = new Test()
-// test.display()ew Test()
 // test.display()

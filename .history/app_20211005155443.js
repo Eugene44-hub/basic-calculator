@@ -91,7 +91,6 @@ class Calculator {
 
     updateDisplay() {
         this.input = document.querySelector('.result')
-
         this.input.textContent = this.currentOperand;
         if (this.operation !== undefined) {
 

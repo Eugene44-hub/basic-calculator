@@ -81,6 +81,7 @@ class Calculator {
         //themes End
 
     appendNumber(input) {
+        if (this.input.textContent === '∞') return
 
         this.currentOperand;
         if (this.currentOperand.includes('.') && input === '.') return
@@ -91,7 +92,6 @@ class Calculator {
 
     updateDisplay() {
         this.input = document.querySelector('.result')
-
         this.input.textContent = this.currentOperand;
         if (this.operation !== undefined) {
 
