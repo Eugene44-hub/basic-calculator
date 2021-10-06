@@ -82,8 +82,6 @@ class Calculator {
 
     appendNumber(input) {
         this.currentOperand;
-        if (this.currentOperand === '∞') return
-
         if (this.currentOperand.includes('.') && input === '.') return
 
         this.currentOperand = this.currentOperand + input;
@@ -93,6 +91,7 @@ class Calculator {
 
     updateDisplay() {
         this.input = document.querySelector('.result')
+        if (this.currentOperand === '∞') return
 
         this.input.textContent = this.currentOperand;
 
@@ -145,6 +144,7 @@ class Calculator {
         }
         if (computation === Infinity) {
             computation = '∞';
+
         }
         this.currentOperand = computation.toString();
         this.operation = undefined;

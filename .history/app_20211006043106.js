@@ -82,8 +82,6 @@ class Calculator {
 
     appendNumber(input) {
         this.currentOperand;
-        if (this.currentOperand === '∞') return
-
         if (this.currentOperand.includes('.') && input === '.') return
 
         this.currentOperand = this.currentOperand + input;

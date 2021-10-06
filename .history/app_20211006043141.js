@@ -82,7 +82,7 @@ class Calculator {
 
     appendNumber(input) {
         this.currentOperand;
-        if (this.currentOperand === '∞') return
+        if (this.input.textContent === '∞') return
 
         if (this.currentOperand.includes('.') && input === '.') return
 
