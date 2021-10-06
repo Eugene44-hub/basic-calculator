@@ -124,6 +124,7 @@ button {
     display: flex;
     text-align: right;
     font-size: 32px;
+    overflow:hidden;
 }
 
 .result {
